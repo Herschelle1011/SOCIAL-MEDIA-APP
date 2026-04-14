@@ -1,0 +1,456 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\viewmodel\\createpostviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\viewmodel\\createpostviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\createpostpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\createpostpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\createpostpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\createpostpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\viewmodel\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\viewmodel\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\36.1.2\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\viewmodel\\authviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\viewmodel\\authviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\converters\\profileconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\converters\\profileconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\converters\\authconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\converters\\authconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SOCIAL MEDIA APP FINAL PROJECT\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Herschelle\\AppData\\Local\\Temp\\.vsdbgsrc\\d4c124a12be54353f75546aadd683fc42bb60e53\\Resources_Styles_Styles.xaml.xsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|c:\\users\\herschelle\\source\\repos\\.net maui projects\\social media app final project\\social media app final project\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F454B838-FB25-7F42-139A-C7E7E6D26F00}|SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj|solutionrelative:social media app final project\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreatePostPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T00:23:05.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\HomeViewModel.cs*",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\HomeViewModel.cs*",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAANcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:02:02.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T14:34:38.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:10:00.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreatePostPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\CreatePostPage.xaml",
+              "ViewState": "AgIAANUAAAAAAAAAAAAQwOkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-13T00:07:10.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml.cs*",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:24:13.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreatePostViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\CreatePostViewModel.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\CreatePostViewModel.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\CreatePostViewModel.cs*",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\CreatePostViewModel.cs*",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAQwLAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T00:08:19.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\HomePage.xaml",
+              "ViewState": "AgIAAIkBAAAAAAAAAAAQwJ0BAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T14:56:06.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\AuthViewModel.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\AuthViewModel.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\AuthViewModel.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\AuthViewModel.cs",
+              "ViewState": "AgIAACIBAAAAAAAAAAAUwMIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:21:34.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\App.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\App.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\App.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T14:29:24.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml",
+              "ViewState": "AgIAALMAAAAAAAAAAAAqwM4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T14:08:27.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\ProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\ProfileViewModel.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\ViewModel\\ProfileViewModel.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwHwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T16:28:00.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAYwAQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T16:23:23.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\App.xaml.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\App.xaml.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:34:42.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Xamarin.Android.Common.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\36.1.2\\tools\\Xamarin.Android.Common.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\36.1.2\\tools\\Xamarin.Android.Common.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\36.1.2\\tools\\Xamarin.Android.Common.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\36.1.2\\tools\\Xamarin.Android.Common.targets",
+              "ViewState": "AgIAADQGAAAAAAAAAAAnwEMGAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-12T14:53:20.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:08:15.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T18:28:03.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Model\\UserModel.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\Model\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Model\\UserModel.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\Model\\UserModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:20:10.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Profileconverters.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Profileconverters.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Profileconverters.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Profileconverters.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Profileconverters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T16:29:41.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Authconverters.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Authconverters.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Authconverters.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Authconverters.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\Converters\\Authconverters.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:22:33.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\MauiProgram.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\MauiProgram.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:20:25.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAqwD8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:10:55.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Resources_Styles_Styles.xaml.xsg.cs",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\AppData\\Local\\Temp\\.vsdbgsrc\\d4c124a12be54353f75546aadd683fc42bb60e53\\Resources_Styles_Styles.xaml.xsg.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d4c124a12be54353f75546aadd683fc42bb60e53\\Resources_Styles_Styles.xaml.xsg.cs",
+              "ToolTip": "C:\\Users\\Herschelle\\AppData\\Local\\Temp\\.vsdbgsrc\\d4c124a12be54353f75546aadd683fc42bb60e53\\Resources_Styles_Styles.xaml.xsg.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d4c124a12be54353f75546aadd683fc42bb60e53\\Resources_Styles_Styles.xaml.xsg.cs [Read Only]",
+              "ViewState": "AgIAAKIFAAAAAAAAAAD4v7EFAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:31:46.369Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Styles.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T14:32:36.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "SOCIAL MEDIA APP FINAL PROJECT\\Resources\\Styles\\Colors.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-12T14:32:40.172Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
