@@ -14,7 +14,7 @@
 
             <!-- Logo -->
             <HorizontalStackLayout HorizontalOptions="Start" Margin="0,0,0,32">
-                <Label Text="Social" FontSize="26" FontAttributes="Bold"
+                <Label Text="CODY" FontSize="26" FontAttributes="Bold"
                        TextColor="White" VerticalOptions="Center"/>
                 <Border BackgroundColor="#06C167" Padding="6,3"
                         Margin="6,0,0,0" VerticalOptions="Center"

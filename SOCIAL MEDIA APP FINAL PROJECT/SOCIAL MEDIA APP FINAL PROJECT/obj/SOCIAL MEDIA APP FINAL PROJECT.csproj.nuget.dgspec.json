@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj": {}
+    "C:\\Users\\Herschelle\\tempsss\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj": {
+    "C:\\Users\\Herschelle\\tempsss\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj",
+        "projectUniqueName": "C:\\Users\\Herschelle\\tempsss\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj",
         "projectName": "SOCIAL MEDIA APP FINAL PROJECT",
-        "projectPath": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj",
+        "projectPath": "C:\\Users\\Herschelle\\tempsss\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj",
         "packagesPath": "C:\\Users\\Herschelle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\obj\\",
+        "outputPath": "C:\\Users\\Herschelle\\tempsss\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

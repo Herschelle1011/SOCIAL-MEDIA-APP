@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "keZtO6AD+5o=",
+  "dgSpecHash": "a8Wsi/cb2Jo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Herschelle\\source\\repos\\.net Maui projects\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj",
+  "projectFilePath": "C:\\Users\\Herschelle\\tempsss\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT\\SOCIAL MEDIA APP FINAL PROJECT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Herschelle\\.nuget\\packages\\googlegson\\2.13.1.1\\googlegson.2.13.1.1.nupkg.sha512",
     "C:\\Users\\Herschelle\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0\\microsoft.extensions.configuration.10.0.0.nupkg.sha512",

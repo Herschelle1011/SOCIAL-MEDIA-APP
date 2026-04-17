@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.Maui.Graphics.Platform;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
@@ -15,9 +16,10 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
         private bool _isBusy;
         private bool _hasImage;
         private ImageSource? _pickedImageSource;
-        private string _pickedImagePath = string.Empty;
+        private string _pickedImageBase64 = string.Empty; // ✅ store base64, not path
 
-        public string AuthorName => Preferences.Get("user_name", "Anonymous");
+        // ✅ Fixed: use "user_username" to match what LoginAsync saves
+        public string AuthorName => Preferences.Get("user_username", "Anonymous");
         public string AvatarUrl => Preferences.Get("user_avatar", string.Empty);
 
         public string PostContent
@@ -74,11 +76,12 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
             RemoveImageCommand = new Command(() =>
             {
                 PickedImageSource = null;
-                _pickedImagePath = string.Empty;
+                _pickedImageBase64 = string.Empty;
                 HasImage = false;
             });
         }
 
+        // ─── Submit Post ─────────────────────────────────────────────────────
         private async Task SubmitPostAsync()
         {
             if (string.IsNullOrWhiteSpace(PostContent))
@@ -105,7 +108,7 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
                     authorName = AuthorName,
                     authorAvatar = AvatarUrl,
                     content = PostContent,
-                    imageUrl = _pickedImagePath,
+                    imageUrl = _pickedImageBase64, // ✅ base64 data URL or empty string
                     likesCount = "0",
                     commentsCount = "0",
                     isLiked = false,
@@ -117,7 +120,6 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
                 var url = $"{BaseUrl}/posts";
 
                 System.Diagnostics.Debug.WriteLine($"[CreatePost] POST {url}");
-                System.Diagnostics.Debug.WriteLine($"[CreatePost] Body: {json}");
 
                 var response = await client.PostAsync(url, content);
                 var responseBody = await response.Content.ReadAsStringAsync();
@@ -131,10 +133,7 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
                     return;
                 }
 
-                // ✅ Fixed: DisplayAlert not DisplayAlertAsync
                 await Shell.Current.DisplayAlert("Posted!", "Your post was shared! 🎉", "OK");
-
-                // ✅ Go BACK (..) so OnAppearing fires on HomePage and reloads feed
                 await Shell.Current.GoToAsync("..");
             }
             catch (Exception ex)
@@ -148,6 +147,7 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
             }
         }
 
+        // ─── Pick & Compress Image ────────────────────────────────────────────
         private async Task PickImageAsync()
         {
             try
@@ -159,15 +159,50 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
 
                 if (result == null) return;
 
-                _pickedImagePath = result.FullPath;
-                var stream = await result.OpenReadAsync();
-                PickedImageSource = ImageSource.FromStream(() => stream);
+                // Read bytes
+                using var stream = await result.OpenReadAsync();
+                using var memoryStream = new MemoryStream();
+                await stream.CopyToAsync(memoryStream);
+                var imageBytes = memoryStream.ToArray();
+
+                // ✅ Compress before storing (keeps MockAPI happy)
+                var compressedBytes = await CompressImageAsync(imageBytes, maxWidthHeight: 600, quality: 65);
+
+                // ✅ Store as base64 data URL
+                var base64 = Convert.ToBase64String(compressedBytes);
+                var mimeType = result.ContentType ?? "image/jpeg";
+                _pickedImageBase64 = $"data:{mimeType};base64,{base64}";
+
+                // Show preview
+                PickedImageSource = ImageSource.FromStream(() => new MemoryStream(compressedBytes));
                 HasImage = true;
             }
             catch (Exception ex)
             {
                 ErrorMessage = $"Could not pick image: {ex.Message}";
             }
+        }
+
+        // ─── Compress helper ─────────────────────────────────────────────────
+        private async Task<byte[]> CompressImageAsync(byte[] imageBytes, int maxWidthHeight, int quality)
+        {
+            using var inputStream = new MemoryStream(imageBytes);
+            var originalImage = PlatformImage.FromStream(inputStream);
+
+            float scale = Math.Min(
+                maxWidthHeight / (float)originalImage.Width,
+                maxWidthHeight / (float)originalImage.Height);
+
+            if (scale >= 1f) scale = 1f; // never upscale
+
+            int newWidth = (int)(originalImage.Width * scale);
+            int newHeight = (int)(originalImage.Height * scale);
+
+            var resized = originalImage.Resize(newWidth, newHeight, ResizeMode.Fit);
+
+            using var outputStream = new MemoryStream();
+            await resized.SaveAsync(outputStream, ImageFormat.Jpeg, quality / 100f);
+            return outputStream.ToArray();
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

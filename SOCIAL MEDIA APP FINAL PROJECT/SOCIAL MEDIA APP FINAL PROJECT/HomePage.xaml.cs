@@ -7,6 +7,7 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT
         public HomePage()
         {
             InitializeComponent();
+            BindingContext = new HomeViewModel();
         }
 
   

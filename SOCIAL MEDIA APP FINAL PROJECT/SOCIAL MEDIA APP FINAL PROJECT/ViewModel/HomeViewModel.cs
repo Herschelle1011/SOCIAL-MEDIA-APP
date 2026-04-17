@@ -27,51 +27,132 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
         [JsonPropertyName("imageUrl")]
         public string ImageUrl { get; set; } = string.Empty;
 
-        [JsonPropertyName("likesCount")]
-        public string LikesCountRaw { get; set; } = "0";
-
-        [JsonPropertyName("commentsCount")]
-        public string CommentsCountRaw { get; set; } = "0";
-
         [JsonPropertyName("isLiked")]
         public bool IsLiked { get; set; }
 
-        public int LikesCount
-        {
-            get => (int)(double.TryParse(LikesCountRaw, out var n) ? n : 0);
-            set => LikesCountRaw = value.ToString();
-        }
+        [JsonPropertyName("likesCount")]
+        [JsonConverter(typeof(FlexibleIntConverter))]
+        public int LikesCount { get; set; }
 
-        public int CommentsCount
-        {
-            get => (int)(double.TryParse(CommentsCountRaw, out var n) ? n : 0);
-            set => CommentsCountRaw = value.ToString();
-        }
+        [JsonPropertyName("commentsCount")]
+        [JsonConverter(typeof(FlexibleIntConverter))]
+        public int CommentsCount { get; set; }
 
         public bool HasImage =>
             !string.IsNullOrWhiteSpace(ImageUrl) &&
-            Uri.TryCreate(ImageUrl, UriKind.Absolute, out _);
+            (ImageUrl.StartsWith("http") || ImageUrl.StartsWith("data:image"));
+
+        public ImageSource? PostImageSource
+        {
+            get
+            {
+                if (string.IsNullOrWhiteSpace(ImageUrl)) return null;
+
+                if (ImageUrl.StartsWith("data:image"))
+                {
+                    try
+                    {
+                        var base64 = ImageUrl.Substring(ImageUrl.IndexOf(",") + 1);
+                        var bytes = Convert.FromBase64String(base64);
+                        return ImageSource.FromStream(() => new MemoryStream(bytes));
+                    }
+                    catch { return null; }
+                }
+
+                if (ImageUrl.StartsWith("http"))
+                    return ImageSource.FromUri(new Uri(ImageUrl));
+
+                return null;
+            }
+        }
+
+        public ImageSource? AuthorAvatarSource
+        {
+            get
+            {
+                if (string.IsNullOrWhiteSpace(AuthorAvatar))
+                    return null;
+
+                try
+                {
+                    // base64 image
+                    if (AuthorAvatar.StartsWith("data:image"))
+                    {
+                        var base64 = AuthorAvatar.Substring(AuthorAvatar.IndexOf(",") + 1);
+                        var bytes = Convert.FromBase64String(base64);
+                        return ImageSource.FromStream(() => new MemoryStream(bytes));
+                    }
+
+                    // valid URL
+                    if (Uri.TryCreate(AuthorAvatar, UriKind.Absolute, out var uri))
+                    {
+                        return ImageSource.FromUri(uri);
+                    }
+                }
+                catch
+                {
+                    // ignore bad images
+                }
+
+                return null;
+            }
+        }
 
         public string TimeAgo
         {
             get
             {
                 if (!DateTime.TryParse(CreatedAt, out var dt)) return "Recently";
+
                 var diff = DateTime.UtcNow - dt.ToUniversalTime();
+
                 if (diff.TotalMinutes < 1) return "Just now";
                 if (diff.TotalMinutes < 60) return $"{(int)diff.TotalMinutes}m ago";
                 if (diff.TotalHours < 24) return $"{(int)diff.TotalHours}h ago";
+
                 return $"{(int)diff.TotalDays}d ago";
             }
         }
     }
 
+    // ✅ Handles int, string, and decimal safely
+    public class FlexibleIntConverter : JsonConverter<int>
+    {
+        public override int Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        {
+            if (reader.TokenType == JsonTokenType.Number)
+            {
+                if (reader.TryGetInt32(out var intVal))
+                    return intVal;
+
+                if (reader.TryGetDouble(out var doubleVal))
+                    return (int)doubleVal;
+            }
+
+            if (reader.TokenType == JsonTokenType.String)
+            {
+                var str = reader.GetString();
+
+                if (int.TryParse(str, out var intVal))
+                    return intVal;
+
+                if (double.TryParse(str, out var doubleVal))
+                    return (int)doubleVal;
+            }
+
+            return 0;
+        }
+
+        public override void Write(Utf8JsonWriter writer, int value, JsonSerializerOptions options)
+            => writer.WriteNumberValue(value);
+    }
+
     public class HomeViewModel : INotifyPropertyChanged
     {
-        // ✅ Correct URL — no /v1
         private const string BaseUrl = "https://69dbab37560857310a07e486.mockapi.io/api";
 
         private bool _isBusy;
+        private string _statusMessage = string.Empty;
 
         public bool IsBusy
         {
@@ -81,12 +162,14 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
 
         public bool IsNotBusy => !_isBusy;
 
-        public string AvatarUrl => Preferences.Get("user_avatar", string.Empty);
-        public string CurrentUserName => Preferences.Get("user_name", "You");
+        public string StatusMessage
+        {
+            get => _statusMessage;
+            set { _statusMessage = value; OnPropertyChanged(); }
+        }
 
         public ObservableCollection<PostModel> Posts { get; } = new();
 
-        // ✅ Only ONE definition of each command
         public ICommand RefreshCommand { get; }
         public ICommand LikePostCommand { get; }
         public ICommand CreatePostCommand { get; }
@@ -96,70 +179,54 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
         {
             RefreshCommand = new Command(async () => await LoadPostsAsync());
             LikePostCommand = new Command<PostModel>(OnLikePost);
-
-            // ✅ Navigates to CreatePostPage (registered route, no // prefix)
             CreatePostCommand = new Command(async () =>
                 await Shell.Current.GoToAsync("CreatePostPage"));
 
-            // ✅ Correct profile route
             GoToProfileCommand = new Command(async () =>
-                await Shell.Current.GoToAsync("//ProfilePage"));
-
-            // Initial load — will be called again by OnAppearing anyway
-            Task.Run(async () => await LoadPostsAsync());
+            {
+                await Shell.Current.GoToAsync("//profile");
+            });
         }
 
-        // ✅ Called by HomePage.xaml.cs OnAppearing every time page is shown
-        public async Task ReloadAsync()
-        {
-            await LoadPostsAsync();
-        }
+        public async Task ReloadAsync() => await LoadPostsAsync();
 
         private async Task LoadPostsAsync()
         {
             IsBusy = true;
+
             try
             {
                 using var client = new HttpClient();
 
-                // ✅ Full correct URL
-                var url = $"{BaseUrl}/posts";
-                var response = await client.GetAsync(url);
+                var response = await client.GetAsync($"{BaseUrl}/posts");
 
-                System.Diagnostics.Debug.WriteLine($"[Home] GET {url} → {response.StatusCode}");
-
-                if (!response.IsSuccessStatusCode)
-                {
-                    System.Diagnostics.Debug.WriteLine("[Home] Non-success, loading mock posts");
-                    MainThread.BeginInvokeOnMainThread(LoadMockPosts);
-                    return;
-                }
+                if (!response.IsSuccessStatusCode) return;
 
                 var json = await response.Content.ReadAsStringAsync();
-                System.Diagnostics.Debug.WriteLine($"[Home] JSON: {json[..Math.Min(200, json.Length)]}");
 
                 var posts = JsonSerializer.Deserialize<List<PostModel>>(json,
-                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
 
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     Posts.Clear();
-                    if (posts == null || posts.Count == 0)
-                    {
-                        System.Diagnostics.Debug.WriteLine("[Home] No posts from API, loading mock");
-                        LoadMockPosts();
-                        return;
-                    }
-                    foreach (var post in posts.OrderByDescending(p => p.CreatedAt))
-                        Posts.Add(post);
 
-                    System.Diagnostics.Debug.WriteLine($"[Home] Loaded {Posts.Count} posts");
+                    if (posts == null) return;
+
+                    foreach (var post in posts.OrderByDescending(p =>
+                        DateTime.TryParse(p.CreatedAt, out var dt) ? dt : DateTime.MinValue))
+                    {
+                        Posts.Add(post);
+                    }
                 });
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"[Home] LoadPosts ERROR: {ex.Message}");
-                MainThread.BeginInvokeOnMainThread(LoadMockPosts);
+                StatusMessage = "Error loading posts";
+                System.Diagnostics.Debug.WriteLine(ex);
             }
             finally
             {
@@ -167,44 +234,10 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
             }
         }
 
-        private void LoadMockPosts()
-        {
-            Posts.Clear();
-            Posts.Add(new PostModel
-            {
-                Id = "mock1",
-                AuthorName = "James Rivera",
-                AuthorAvatar = "https://i.pravatar.cc/150?img=1",
-                Content = "Just shipped a new feature! The dark theme is looking 🔥",
-                LikesCountRaw = "128",
-                CommentsCountRaw = "24",
-                CreatedAt = DateTime.UtcNow.AddHours(-2).ToString("o")
-            });
-            Posts.Add(new PostModel
-            {
-                Id = "mock2",
-                AuthorName = "Sofia Chen",
-                AuthorAvatar = "https://i.pravatar.cc/150?img=5",
-                Content = "Exploring .NET MAUI for cross-platform development! 🚀 #dotnet #maui",
-                LikesCountRaw = "87",
-                CommentsCountRaw = "11",
-                CreatedAt = DateTime.UtcNow.AddDays(-1).ToString("o")
-            });
-            Posts.Add(new PostModel
-            {
-                Id = "mock3",
-                AuthorName = "Marco Diaz",
-                AuthorAvatar = "https://i.pravatar.cc/150?img=8",
-                Content = "Code is poetry. Keep building! 💚",
-                LikesCountRaw = "213",
-                CommentsCountRaw = "45",
-                CreatedAt = DateTime.UtcNow.AddDays(-3).ToString("o")
-            });
-        }
-
         private void OnLikePost(PostModel? post)
         {
             if (post == null) return;
+
             post.IsLiked = !post.IsLiked;
             post.LikesCount += post.IsLiked ? 1 : -1;
         }

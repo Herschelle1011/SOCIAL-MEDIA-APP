@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.Maui.Graphics.Platform;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
@@ -313,29 +314,21 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
 
                 if (result == null) return;
 
-                // Convert image to Base64 string
                 using var stream = await result.OpenReadAsync();
                 using var memoryStream = new MemoryStream();
                 await stream.CopyToAsync(memoryStream);
                 var imageBytes = memoryStream.ToArray();
 
-                // Resize check — Base64 can get very large
-                if (imageBytes.Length > 1_000_000) // 1MB limit
-                {
-                    StatusMessage = "Image too large. Please pick a smaller photo.";
-                    StatusColor = "#FF4444";
-                    return;
-                }
+                // ✅ Resize/compress before Base64 encoding
+                var compressedBytes = await CompressImageAsync(imageBytes, maxWidthHeight: 300, quality: 60);
 
-                var base64String = Convert.ToBase64String(imageBytes);
-                var mimeType = result.ContentType ?? "image/jpeg";
+                var base64String = Convert.ToBase64String(compressedBytes);
+                var mimeType = "image/jpeg"; // always jpeg after compression
                 var dataUrl = $"data:{mimeType};base64,{base64String}";
 
-                // Store as data URL
                 AvatarUrl = dataUrl;
 
-                // Show preview using stream
-                var previewStream = await result.OpenReadAsync();
+                var previewStream = new MemoryStream(compressedBytes);
                 PickedAvatarSource = ImageSource.FromStream(() => previewStream);
 
                 StatusMessage = "Avatar selected! Tap Save to apply.";
@@ -377,6 +370,34 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
         protected void OnPropertyChanged([CallerMemberName] string? name = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
-    
+  
+
+        // ✅ Compress using MAUI's built-in encoder
+        private async Task<byte[]> CompressImageAsync(byte[] imageBytes, int maxWidthHeight, int quality)
+        {
+            using var inputStream = new MemoryStream(imageBytes);
+
+            // Decode original
+            var originalImage = PlatformImage.FromStream(inputStream);
+
+            // Scale down if needed
+            float scale = Math.Min(
+                maxWidthHeight / (float)originalImage.Width,
+                maxWidthHeight / (float)originalImage.Height
+            );
+
+            // Only downscale, never upscale
+            if (scale >= 1f) scale = 1f;
+
+            int newWidth = (int)(originalImage.Width * scale);
+            int newHeight = (int)(originalImage.Height * scale);
+
+            var resized = originalImage.Resize(newWidth, newHeight, ResizeMode.Fit);
+
+            using var outputStream = new MemoryStream();
+            await resized.SaveAsync(outputStream, ImageFormat.Jpeg, quality / 100f);
+            return outputStream.ToArray();
+        }
+
     }
 }

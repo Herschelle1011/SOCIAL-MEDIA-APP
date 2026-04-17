@@ -6,6 +6,9 @@
         {
             InitializeComponent();
             Routing.RegisterRoute("CreatePostPage", typeof(CreatePostPage));
+            Routing.RegisterRoute("HomePage", typeof(HomePage));
+            Routing.RegisterRoute("profile", typeof(profile));
+            Routing.RegisterRoute("CreatePostPage", typeof(CreatePostPage));
 
         }
     }

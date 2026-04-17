@@ -196,9 +196,9 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT.ViewModel
                 Preferences.Set("user_username", matched.Username ?? "");   
                 Preferences.Set("user_avatar", matched.Avatar ?? "");
                 // TODO: Navigate to home page
-                await Shell.Current.GoToAsync("//HomePage");
+                await Shell.Current.GoToAsync("HomePage");
 
-     
+
             }
             catch (Exception ex)
             {

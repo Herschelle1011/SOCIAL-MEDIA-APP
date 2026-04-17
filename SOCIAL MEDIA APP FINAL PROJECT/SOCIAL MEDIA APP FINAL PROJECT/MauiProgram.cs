@@ -17,6 +17,7 @@ namespace SOCIAL_MEDIA_APP_FINAL_PROJECT
 
 #if DEBUG
     		builder.Logging.AddDebug();
+
 #endif
 
             return builder.Build();
